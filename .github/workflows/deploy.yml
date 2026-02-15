@@ -1,0 +1,32 @@
+name: Deploy Flutter
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy_flutter:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Flutter code
+        uses: actions/checkout@v3
+
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.8.1
+        with:
+          ssh-private-key: ${{ secrets.VPS_KEY }}
+
+      - name: Deploy Flutter to VPS
+        run: |
+          ssh -o StrictHostKeyChecking=no yenlei@${{ secrets.VPS_HOST }} "
+          cd ~/mon_saas
+          git reset --hard
+          git clean -fd
+          git pull origin main
+
+          # Build et relance du conteneur Flutter
+          docker-compose build flutter
+          docker-compose up -d flutter
+          "

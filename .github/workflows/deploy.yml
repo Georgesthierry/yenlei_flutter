@@ -3,7 +3,7 @@ name: Deploy Flutter
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy_flutter:

@@ -221,7 +221,7 @@ class _HomePageState extends State<HomePage> {
                               height: 70.h,
                               width: 600.w,
                               child: Text(
-                                "Je suis un ingenieur et integrateur logiciel avec plusieur annee d'experiance .",
+                                "Je suis un ingenieur et integrateur logiciel avec plusieur annee d'experiance, je consoitdes logiciel sur .",
                                 textAlign: TextAlign.start,
                                 style: TextStyle(
                                   color: Colors.white,
@@ -280,7 +280,7 @@ class _HomePageState extends State<HomePage> {
                           Padding(
                             padding: const EdgeInsets.only(left: 10.0),
                             child: Text(
-                              "Les stacks utilisé",
+                              "Les stacks utilisé test",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 16,

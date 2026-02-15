@@ -280,7 +280,7 @@ class _HomePageState extends State<HomePage> {
                           Padding(
                             padding: const EdgeInsets.only(left: 10.0),
                             child: Text(
-                              "Les stacks utilisé",
+                              "Les stacks utilisé test",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 16,

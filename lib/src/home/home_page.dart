@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 SizedBox(height: 20),
                 Text(
-                  "Bonjour , je suis Thierry Georges KOUASSI",
+                  "Bonjour , je suis Thierry Georges KOUASSI KANGA",
                   style: TextStyle(
                     color: AppColors.white,
                     fontSize: 16,
@@ -221,7 +221,7 @@ class _HomePageState extends State<HomePage> {
                               height: 70.h,
                               width: 600.w,
                               child: Text(
-                                "I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.",
+                                "Je suis un ingenieur et integrateur logiciel avec plusieur annee d'experiance .",
                                 textAlign: TextAlign.start,
                                 style: TextStyle(
                                   color: Colors.white,
